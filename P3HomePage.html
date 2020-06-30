@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- style sheets-->
+    <div>
+    <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+            
+        
+    </body>
+
+
+
+    <!--info in this order for: navbar, carousel, background image-->
+    <style>
+
+            .navbar {background-color:#5A0080 ; opacity: 1.0;
+              filter: alpha(opacity=50); padding: 10px}
+            
+            .nav.navbar-nav li a {color:#E39FFF; font-family: Monaco; padding:10px}
+            .navbar-brand {color: #E39FFF; text-align: left ;}
+            .nav-link {color:#E39FFF} 
+       
+            .logo-image{
+            width: 550px;
+            height: 75px;
+            overflow: hidden;
+            align-self: left;
+            }
+
+            .other-logo-image{
+              width: 120px;
+              height:120px;
+              overflow: hidden;
+              border-radius: 50%;
+              margin: -15px;
+              align-self: left;
+            }
+
+            .nav-item{
+              font-size: medium;
+              font-family: Georgia
+            }
+
+        
+  
+    ul li { 
+        list-style: none; 
+    } 
+  
+    ul li a { 
+        text-decoration: none; 
+        font-size: 14px; 
+        font-weight: bold; 
+        color: #E39FFF; 
+        position: relative; 
+  
+    } 
+  
+    ul li a::before { 
+        content: ""; 
+        width: 0px; 
+        height: 5px; 
+        background:#E39FFF; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        transition: .5s; 
+        color:white;
+    } 
+  
+    ul li a:hover::before { 
+        width: 50%; 
+        transform: translateX(100%); 
+    } 
+
+            .carousel-item {
+            height: 82vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
+            .center-item {
+              background-position: center;
+            }
+            .bottom-item {
+            background-position: bottom;
+            }
+
+            .top-item {
+            background-position:top ;
+            }
+
+            .lightfont {
+              color: white;
+              text-align: center;
+              text-emphasis: bold;
+              text-shadow: blueviolet;
+              font-family: Monaco;
+            }
+            .darkfont {
+              color: black;
+              text-align: center;
+              text-emphasis: bold;
+              text-shadow: blueviolet;
+              font-family: Optima;
+            }
+          
+            
+            body {
+            background: url('https://github.com/Peppermint-Flowers/Images4P3Site/blob/master/background%20for%20p3%20siteWebSize.jpg?raw=true') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            }
+    
+    </style>
+
+
+
+<body>
+  <header>
+<nav class="navbar navbar-expand-lg static-top fill">
+  <a class="navbar-brand" href="/">
+    <div class="logo-image">
+          <img src="https://github.com/Peppermint-Flowers/Images4P3Site/blob/master/hero%20image%20for%20P3%20siteUPDATED.jpg?raw=true" class="img-fluid">
+    </div>
+  </a>
+  <div class="container">
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="navbar-brand" href="#">Home</a>
+                <span class="sr-only">(current)</span>
+              </a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#">What We Do</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Get Involved!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Sponsers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <a class="navbar-brand" href="/">
+      <div class="other-logo-image">
+            <img src="https://github.com/Peppermint-Flowers/Images4P3Site/blob/master/P3%20Logo.jpg?raw=true" class="img-fluid">
+      </div>
+    </a>
+  
+</nav>
+
+
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3eDOU_uoaYWIRw_HMUrIbd8wcxm7YvO8u36AuKpN2XNIkZcG-AjfV39RjiLbxyWwm9PibzSaTsjQScpI8MyIJOZmqQ3GBqMVEJU7cpdRUe8nhiYj5EwxSrvV_L2KMTtmOcnHjU2F6mOC8e7aG0csDMihQ=w876-h657-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Inspiring</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item center-item" style="background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3e4UjTNiaizYFtP048HfiOqXCv50r7Czpa-LE-jRXq2UPnDKEnkEmXDnRl6BsXdKYwrJ-dOsrwkPpvwXLkuGeaZvRsDnDLHu0cvDr7_qYGaqtAnboxAAj78oCMozWwk_cMV4xg1Ysih7FI6FUPHtVsZRA=w986-h657-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block ">
+            <h3 class="display-4">Competitions</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item top-item" style="background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3cp8LiflcsNDAet-yAYvqmlNtINJHgmkWYI_dYDflOIfNYM5ni4fBESibwVd6TNwIUxp-UH-iOtVvjL3J26IYMnFgzSwvXPUyL6BGw44oyoyHAxJquVBSyq6s6sa0x1k-AcRp1lMJBDLLUCyr3R91gGpw=w876-h657-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Teamwork</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+        <div class="carousel-item center-item" style="background-image: url(' https://lh3.googleusercontent.com/pw/ACtC-3c3dnv3cjmDAh2rrDOcTSxa9r9hMn95cTIlCdljFk9UwghsqjTHjHIfxuRN_OXDPy744CpHRYRAUm_LRFEnbLzHYTFNLcDjZgpJx_gbgiprqNuccni6j7OMZl2W3JUPBbMXXIxleeZvFrQHKgDSgqTxdg=w876-h657-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Outreach</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+        <div class="carousel-item center-item" style="background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3fA2N3D0M8JdOXkI_3ZLtmRsVASeeo5Qd-052VYWaKsISuwwbh-v4xSWZR6lf75R1QfviQ2GEEGyJRIan1ebErY4AjwOdlJsNs2Aq1xtAwpsDFxVtuQqIsW30lYOKJntV0eQz6ZkVwefAjm42HTx5zh-A=w876-h657-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Innovation</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+        <div class="carousel-item center-item" style="background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3eiTL4dH4X9s9kCT1T-vc13KGDeA3hG9myFTDUWbXQvhkuf8UDK-jKkdfTM7AVoWiwkAfXZkvxLUJI9pAvECrj4a6KJrXzWxg2x_-DPp806127q3BwvyWpHObP2ATUmkhJoE8LRV2S9pmB3G-k4VLWlyA=w1006-h566-no?authuser=0')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4">Fun Times</h3>
+            <p class="lead">...</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
+ </body>
+
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <h1 class="font-weight-light darkfont"><b>Welcome To The Official P3 Site!</b></</h1>
+        <p class="lead darkfont">We are an all girl scout FTC robotics team that wants to inspire other girls to get involved in STEAM!</p>
+        <p class="lead">blahblahblahwordswordswords</p>
+        <div style="height: 700px"></div>
+        <p class="lead mb-0">...wordswordswords</p>
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    .footer {
+      position: bottom;
+      height: 50px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:#5A0080 ;
+      color: white;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+      <p>blahblahblah insert important copyright information here</p>
+    </div>
+      
+</html>
